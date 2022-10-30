@@ -15,6 +15,8 @@
 		C190AC6E290D33E7008A8C9E /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190AC6D290D33E7008A8C9E /* ListController.swift */; };
 		C190AC71290D3402008A8C9E /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C190AC70290D3402008A8C9E /* DetailView.storyboard */; };
 		C190AC73290D3424008A8C9E /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190AC72290D3424008A8C9E /* DetailController.swift */; };
+		C190AC75290DA097008A8C9E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190AC74290DA097008A8C9E /* ListViewModel.swift */; };
+		C190AC78290DA247008A8C9E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190AC77290DA247008A8C9E /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C190AC6D290D33E7008A8C9E /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		C190AC70290D3402008A8C9E /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
 		C190AC72290D3424008A8C9E /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		C190AC74290DA097008A8C9E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		C190AC77290DA247008A8C9E /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		C190AC52290D2C12008A8C9E /* transition-v1 */ = {
 			isa = PBXGroup;
 			children = (
+				C190AC76290DA235008A8C9E /* Data */,
 				C190AC67290D338E008A8C9E /* Presentation */,
 				C190AC53290D2C12008A8C9E /* AppDelegate.swift */,
 				C190AC55290D2C12008A8C9E /* SceneDelegate.swift */,
@@ -92,6 +97,7 @@
 			children = (
 				C190AC6B290D33D9008A8C9E /* ListView.storyboard */,
 				C190AC6D290D33E7008A8C9E /* ListController.swift */,
+				C190AC74290DA097008A8C9E /* ListViewModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -103,6 +109,14 @@
 				C190AC72290D3424008A8C9E /* DetailController.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		C190AC76290DA235008A8C9E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C190AC77290DA247008A8C9E /* Error.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C190AC75290DA097008A8C9E /* ListViewModel.swift in Sources */,
 				C190AC54290D2C12008A8C9E /* AppDelegate.swift in Sources */,
 				C190AC56290D2C12008A8C9E /* SceneDelegate.swift in Sources */,
 				C190AC73290D3424008A8C9E /* DetailController.swift in Sources */,
+				C190AC78290DA247008A8C9E /* Error.swift in Sources */,
 				C190AC6E290D33E7008A8C9E /* ListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,19 +8,25 @@
 import UIKit
 
 class ListController: UITableViewController {
-
+    var viewModel: ListViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        viewModel = ListViewModel()
+        Task {
+            try? await viewModel.getCharactersList()
+            tableView.reloadData()
+        }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = viewModel.characters[indexPath.row].name
         return cell
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        6
+        viewModel.characters.count
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
