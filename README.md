@@ -2,12 +2,13 @@
 
 # ANIMATION SAMPLE
 
-## Getting started
+## Introduction
 
 This repo contains a bunch of animation sample to try in your projects.
 
 ### Transitions
 - Custom transition for present controller
+
 ![video](README/transition-1.gif)
 
 ## License
