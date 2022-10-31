@@ -14,6 +14,10 @@ class ListController: UITableViewController {
         super.viewDidLoad()
         configure()
         viewModel = ListViewModel()
+        load()
+    }
+
+    func load(){
         Task {
             try? await viewModel.getCharactersList()
             tableView.reloadData()
@@ -27,6 +31,10 @@ class ListController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if (viewModel.characters.count - 5 < indexPath.row) && viewModel.hasNextPage {
+            load()
+        }
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
 
         cell.setupUI(for: viewModel.characters[indexPath.row])

@@ -16,7 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="73" id="KGk-i7-Jjw" customClass="UserCell" customModule="transition_v1" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="90" id="KGk-i7-Jjw" customClass="UserCell" customModule="transition_v1" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -27,10 +27,10 @@
                         <rect key="frame" x="16" y="8" width="358" height="72"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hfZ-8X-H9Z">
-                                <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                <rect key="frame" x="10" y="6" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="CRp-sK-ZFy"/>
-                                    <constraint firstAttribute="width" constant="40" id="akO-zB-0pc"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ale-Xz-kG1"/>
+                                    <constraint firstAttribute="width" constant="60" id="JQl-Op-4O7"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -44,7 +44,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGD-v4-orf">
-                                <rect key="frame" x="68" y="26" width="238" height="21"/>
+                                <rect key="frame" x="90" y="26" width="248" height="21"/>
                                 <fontDescription key="fontDescription" name="RaptorV3Premium-Regular" family="Raptor V3 Premium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,29 +52,16 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a7y-Aa-6Gk">
-                                <rect key="frame" x="318" y="24" width="24" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="cZV-OK-cIr"/>
-                                    <constraint firstAttribute="width" constant="24" id="dlA-HJ-Nck"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="a7y-Aa-6Gk" secondAttribute="trailing" constant="16" id="IXJ-AD-e6G"/>
-                            <constraint firstItem="a7y-Aa-6Gk" firstAttribute="leading" secondItem="YGD-v4-orf" secondAttribute="trailing" constant="12" id="L4t-2T-ztc"/>
-                            <constraint firstItem="YGD-v4-orf" firstAttribute="leading" secondItem="hfZ-8X-H9Z" secondAttribute="trailing" constant="12" id="Tzl-WH-ye4"/>
-                            <constraint firstItem="hfZ-8X-H9Z" firstAttribute="leading" secondItem="zlw-nv-mHq" secondAttribute="leading" constant="16" id="Z9V-ba-Hzg"/>
-                            <constraint firstAttribute="bottom" secondItem="a7y-Aa-6Gk" secondAttribute="bottom" constant="24" id="ZoH-Qs-aOs"/>
+                            <constraint firstItem="YGD-v4-orf" firstAttribute="leading" secondItem="hfZ-8X-H9Z" secondAttribute="trailing" constant="20" id="CO5-WQ-eml"/>
+                            <constraint firstAttribute="trailing" secondItem="YGD-v4-orf" secondAttribute="trailing" constant="20" id="V6d-S1-mcC"/>
                             <constraint firstAttribute="bottom" secondItem="YGD-v4-orf" secondAttribute="bottom" constant="25" id="afY-fb-fDQ"/>
+                            <constraint firstItem="hfZ-8X-H9Z" firstAttribute="leading" secondItem="zlw-nv-mHq" secondAttribute="leading" constant="10" id="dfm-G0-BCC"/>
                             <constraint firstItem="YGD-v4-orf" firstAttribute="top" secondItem="zlw-nv-mHq" secondAttribute="top" constant="26" id="f6z-C9-Pv1"/>
-                            <constraint firstItem="hfZ-8X-H9Z" firstAttribute="top" secondItem="zlw-nv-mHq" secondAttribute="top" constant="16" id="jz8-kM-KgQ"/>
-                            <constraint firstItem="a7y-Aa-6Gk" firstAttribute="top" secondItem="zlw-nv-mHq" secondAttribute="top" constant="24" id="xW7-j3-PbJ"/>
-                            <constraint firstAttribute="bottom" secondItem="hfZ-8X-H9Z" secondAttribute="bottom" constant="16" id="xvf-T7-0D8"/>
+                            <constraint firstItem="hfZ-8X-H9Z" firstAttribute="top" secondItem="zlw-nv-mHq" secondAttribute="top" constant="6" id="ugz-X4-5eS"/>
+                            <constraint firstAttribute="bottom" secondItem="hfZ-8X-H9Z" secondAttribute="bottom" constant="6" id="v1k-7D-7PV"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
@@ -99,7 +86,6 @@
             <connections>
                 <outlet property="backgroundView" destination="H2p-sc-9uM" id="XZv-1D-EDi"/>
                 <outlet property="containerView" destination="zlw-nv-mHq" id="4vD-N3-o67"/>
-                <outlet property="userDepartmentImage" destination="a7y-Aa-6Gk" id="9N6-aK-B3z"/>
                 <outlet property="userFullName" destination="YGD-v4-orf" id="DrW-hN-3YS"/>
                 <outlet property="userImage" destination="hfZ-8X-H9Z" id="fmI-pj-qGa"/>
             </connections>

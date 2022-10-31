@@ -11,7 +11,6 @@ import AlamofireImage
 class DetailController: UIViewController {
 
     @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var descriptionLabel: UILabel!
 
     let viewModel = DetailViewModel()
     
@@ -26,9 +25,12 @@ class DetailController: UIViewController {
             return
         }
         self.backgroundImage.af.setImage(withURL: url)
+        self.backgroundImage.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissVC))
+        self.backgroundImage.addGestureRecognizer(tap)
     }
 
-    @IBAction func onPressDismiss(_ sender: Any) {
+    @objc func dismissVC(){
         self.dismiss(animated: true, completion: nil)
     }
 }

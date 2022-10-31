@@ -26,9 +26,10 @@ struct ListDTO: Codable {
 class ListViewModel {
     var characters: [CharacterDTO] = []
     var hasNextPage: Bool = true
+    var page = 1
     
     func getCharactersList() async throws {
-        guard let url = URL(string: "https://rickandmortyapi.com/api/character") else {
+        guard let url = URL(string: "https://rickandmortyapi.com/api/character/?page=\(page)") else {
             throw NetworkError.badURL
         }
         let request = URLRequest(url: url)
@@ -37,16 +38,18 @@ class ListViewModel {
             guard let response = response as? HTTPURLResponse else {
                 throw NetworkError.invalidResponse
             }
+            print(response.url ?? "")
             let decoder = JSONDecoder()
             do {
                 if (200..<300).contains(response.statusCode) {
                     let list = try decoder.decode(ListDTO.self, from: data)
-                    self.characters = list.results
+                    self.characters.append(contentsOf: list.results)
                     guard let nextPage = list.info.next else {
                         self.hasNextPage = false
                         return
                     }
                     self.hasNextPage = !nextPage.isEmpty ? true : false
+                    self.page += hasNextPage ? 1 : 0
                 } else {
                     throw NetworkError.badResponse
                 }
