@@ -13,5 +13,11 @@ Expected behaviour             |  Modified behaviour
 :-------------------------:|:-------------------------:|
 ![video](README/transition-1A.gif)  |  ![video](README/transition-1.gif)
 
+- Custom transition from an element. Using `UIViewControllerTransitioningDelegate` and a `NSObject` we can create an animation from a single element
+
+Expected behaviour             |  Modified behaviour       
+:-------------------------:|:-------------------------:|
+![video](README/transition-1A.gif)  |  ![video](README/transition-2.gif)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
