@@ -4,12 +4,14 @@
 
 ## Introduction
 
-This repo contains a bunch of animation sample to try in your projects. Using `UIViewControllerTransitioningDelegate`you can manipulate the transition between 2 viewcontrollers. It doen't matter if is a push or present.
+This repo contains a bunch of animation sample to try in your projects. 
 
 ### Transitions
-- Custom transition for present controller
+- Custom transition for present controller. Using `UIViewControllerTransitioningDelegate` you can manipulate the transition between 2 viewcontrollers. In this case we have 2 viewcontrollers (A and B) where A is presenting B but we have change its behaviour to make it different.
 
-![video](README/transition-1.gif)
+Expected behaviour             |  Modified behaviour       
+:-------------------------:|:-------------------------:|
+![video](README/transition-1A.gif)  |  ![video](README/transition-1.gif)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
