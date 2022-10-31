@@ -11,17 +11,51 @@
         <!--Detail Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="DetailController" customModule="transition_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailController" id="Y6W-OH-hqX" customClass="DetailController" customModule="transition_v1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tul-Le-xol">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM9-zF-qdn">
+                                <rect key="frame" x="174" y="142" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WW0-EI-uy8">
+                                <rect key="frame" x="157.66666666666666" y="734" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="onPressDismiss:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="l47-Mt-etU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="WW0-EI-uy8" secondAttribute="bottom" constant="41" id="103-pg-Tm6"/>
+                            <constraint firstItem="Tul-Le-xol" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="UbP-GV-2Qy"/>
+                            <constraint firstItem="VM9-zF-qdn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="174" id="eba-T5-CbC"/>
+                            <constraint firstItem="Tul-Le-xol" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hLG-6T-qiy"/>
+                            <constraint firstItem="WW0-EI-uy8" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ha0-C8-OkV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VM9-zF-qdn" secondAttribute="trailing" constant="174" id="kDo-Pu-weu"/>
+                            <constraint firstAttribute="bottom" secondItem="Tul-Le-xol" secondAttribute="bottom" id="oyE-3G-qPU"/>
+                            <constraint firstItem="VM9-zF-qdn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="95" id="sOD-5j-gME"/>
+                            <constraint firstItem="Tul-Le-xol" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="x8E-p5-dpu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="Tul-Le-xol" id="h1o-3P-o1L"/>
+                        <outlet property="descriptionLabel" destination="VM9-zF-qdn" id="0zj-1f-ZCA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125" y="-2"/>
+            <point key="canvasLocation" x="124.61538461538461" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>
