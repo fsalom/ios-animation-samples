@@ -26,6 +26,9 @@ class DetailController: UIViewController {
         }
         self.backgroundImage.af.setImage(withURL: url)
         self.backgroundImage.isUserInteractionEnabled = true
+        self.backgroundImage.layer.masksToBounds = false
+        self.backgroundImage.layer.cornerRadius = 20
+        self.backgroundImage.clipsToBounds = true
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissVC))
         self.backgroundImage.addGestureRecognizer(tap)
     }

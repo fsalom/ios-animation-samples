@@ -12,7 +12,7 @@ final class Animator: NSObject, UIViewControllerAnimatedTransitioning {
 
     // 9
 
-    static let duration: TimeInterval = 1.25
+    static let duration: TimeInterval = 0.5
 
     private let type: PresentationType
     private let firstViewController: ListController

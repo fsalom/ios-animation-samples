@@ -27,10 +27,8 @@ class UserCell: UITableViewCell {
     func setupUI(for character: CharacterDTO) {
         self.character = character
         userFullName.text = character.name
-        userImage.layer.borderWidth = 1
         userImage.layer.masksToBounds = false
-        userImage.layer.borderColor = UIColor.gray.cgColor
-        userImage.layer.cornerRadius = self.userImage.frame.height / 2
+        userImage.layer.cornerRadius = 10
         userImage.clipsToBounds = true
         if let url = URL(string: character.image){
             userImage.af.setImage(withURL: url)
