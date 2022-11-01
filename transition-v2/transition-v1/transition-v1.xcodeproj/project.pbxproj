@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C154E3BF290FE75700EDAA8D /* PresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154E3BE290FE75600EDAA8D /* PresentTransition.swift */; };
-		C154E3C1290FE76800EDAA8D /* DismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154E3C0290FE76800EDAA8D /* DismissTransition.swift */; };
 		C154E3CA290FEEF800EDAA8D /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = C154E3C9290FEEF800EDAA8D /* AlamofireImage */; };
 		C154E3CC290FF0B300EDAA8D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154E3CB290FF0B300EDAA8D /* DetailViewModel.swift */; };
 		C1634C4A290FFE1700FA0A93 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1634C48290FFE1700FA0A93 /* UserCell.xib */; };
 		C1634C4B290FFE1700FA0A93 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1634C49290FFE1700FA0A93 /* UserCell.swift */; };
-		C1634C5029108B2200FA0A93 /* animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1634C4F29108B2200FA0A93 /* animator.swift */; };
+		C1634C5029108B2200FA0A93 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1634C4F29108B2200FA0A93 /* Animator.swift */; };
 		C190AC54290D2C12008A8C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190AC53290D2C12008A8C9E /* AppDelegate.swift */; };
 		C190AC56290D2C12008A8C9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190AC55290D2C12008A8C9E /* SceneDelegate.swift */; };
 		C190AC5D290D2C14008A8C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C190AC5C290D2C14008A8C9E /* Assets.xcassets */; };
@@ -27,12 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C154E3BE290FE75600EDAA8D /* PresentTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTransition.swift; sourceTree = "<group>"; };
-		C154E3C0290FE76800EDAA8D /* DismissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTransition.swift; sourceTree = "<group>"; };
 		C154E3CB290FF0B300EDAA8D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		C1634C48290FFE1700FA0A93 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		C1634C49290FFE1700FA0A93 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
-		C1634C4F29108B2200FA0A93 /* animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animator.swift; sourceTree = "<group>"; };
+		C1634C4F29108B2200FA0A93 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		C190AC50290D2C12008A8C9E /* transition-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transition-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C190AC53290D2C12008A8C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C190AC55290D2C12008A8C9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,9 +116,7 @@
 			children = (
 				C190AC6A290D33B4008A8C9E /* Detail */,
 				C190AC69290D33A9008A8C9E /* List */,
-				C154E3BE290FE75600EDAA8D /* PresentTransition.swift */,
-				C154E3C0290FE76800EDAA8D /* DismissTransition.swift */,
-				C1634C4F29108B2200FA0A93 /* animator.swift */,
+				C1634C4F29108B2200FA0A93 /* Animator.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -234,14 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1634C5029108B2200FA0A93 /* animator.swift in Sources */,
+				C1634C5029108B2200FA0A93 /* Animator.swift in Sources */,
 				C190AC75290DA097008A8C9E /* ListViewModel.swift in Sources */,
-				C154E3C1290FE76800EDAA8D /* DismissTransition.swift in Sources */,
 				C154E3CC290FF0B300EDAA8D /* DetailViewModel.swift in Sources */,
 				C190AC54290D2C12008A8C9E /* AppDelegate.swift in Sources */,
 				C190AC56290D2C12008A8C9E /* SceneDelegate.swift in Sources */,
 				C190AC73290D3424008A8C9E /* DetailController.swift in Sources */,
-				C154E3BF290FE75700EDAA8D /* PresentTransition.swift in Sources */,
 				C190AC78290DA247008A8C9E /* Error.swift in Sources */,
 				C1634C4B290FFE1700FA0A93 /* UserCell.swift in Sources */,
 				C190AC6E290D33E7008A8C9E /* ListController.swift in Sources */,
