@@ -9,10 +9,7 @@ import UIKit
 
 class ListController: UITableViewController {
     var viewModel: ListViewModel!
-    var animator: Animator?
-    var selectedCell: UserCell?
-    var selectedCellImageViewSnapshot: UIView?
-
+    var animator: UIViewPropertyAnimator!
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -28,7 +25,7 @@ class ListController: UITableViewController {
     }
 
     func configure(){
-        self.tableView.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
+        self.tableView.register(UINib(nibName: "CharacterCell", bundle: nil), forCellReuseIdentifier: "CharacterCell")
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
@@ -38,7 +35,7 @@ class ListController: UITableViewController {
             load()
         }
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath) as! CharacterCell
 
         cell.setupUI(for: viewModel.characters[indexPath.row])
         return cell
@@ -60,31 +57,17 @@ class ListController: UITableViewController {
         vc.viewModel.character = viewModel.characters[indexPath.row]
         vc.modalPresentationStyle = .custom
         vc.transitioningDelegate = self
-        selectedCell = tableView.cellForRow(at: indexPath) as? UserCell
-        selectedCellImageViewSnapshot = selectedCell?.userImage.snapshotView(afterScreenUpdates: false)
         self.present(vc, animated: true, completion: nil)
     }
 }
 
 extension ListController: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        guard let firstViewController = presenting as? ListController,
-                let secondViewController = presented as? DetailController,
-                let selectedCellImageViewSnapshot = selectedCellImageViewSnapshot
-                else { return nil }
-
-            animator = Animator(type: .present, firstViewController: firstViewController, secondViewController: secondViewController, selectedCellImageViewSnapshot: selectedCellImageViewSnapshot)
-            return animator
+        return PresentTransition()
     }
 
-
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        guard let secondViewController = dismissed as? DetailController,
-            let selectedCellImageViewSnapshot = selectedCellImageViewSnapshot
-            else { return nil }
-
-        animator = Animator(type: .dismiss, firstViewController: self, secondViewController: secondViewController, selectedCellImageViewSnapshot: selectedCellImageViewSnapshot)
-        return animator
+        return DismissTransition()
     }
 }
 

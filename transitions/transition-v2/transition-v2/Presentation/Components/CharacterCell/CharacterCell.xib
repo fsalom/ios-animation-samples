@@ -16,7 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="90" id="KGk-i7-Jjw" customClass="UserCell" customModule="transition_v1" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CharacterCell" rowHeight="90" id="KGk-i7-Jjw" customClass="CharacterCell" customModule="transition_v2" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="390" height="88"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -84,10 +84,8 @@
                 <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="backgroundView" destination="H2p-sc-9uM" id="XZv-1D-EDi"/>
-                <outlet property="containerView" destination="zlw-nv-mHq" id="4vD-N3-o67"/>
-                <outlet property="userFullName" destination="YGD-v4-orf" id="DrW-hN-3YS"/>
-                <outlet property="userImage" destination="hfZ-8X-H9Z" id="fmI-pj-qGa"/>
+                <outlet property="characterImage" destination="hfZ-8X-H9Z" id="zCr-8g-xS1"/>
+                <outlet property="characterName" destination="YGD-v4-orf" id="QPW-Fa-CGY"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </tableViewCell>

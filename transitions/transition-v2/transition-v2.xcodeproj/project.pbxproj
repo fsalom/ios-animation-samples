@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		C154E3CA290FEEF800EDAA8D /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = C154E3C9290FEEF800EDAA8D /* AlamofireImage */; };
 		C154E3CC290FF0B300EDAA8D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C154E3CB290FF0B300EDAA8D /* DetailViewModel.swift */; };
-		C1634C4A290FFE1700FA0A93 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1634C48290FFE1700FA0A93 /* UserCell.xib */; };
-		C1634C4B290FFE1700FA0A93 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1634C49290FFE1700FA0A93 /* UserCell.swift */; };
+		C1634C4A290FFE1700FA0A93 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1634C48290FFE1700FA0A93 /* CharacterCell.xib */; };
+		C1634C4B290FFE1700FA0A93 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1634C49290FFE1700FA0A93 /* CharacterCell.swift */; };
 		C1634C5029108B2200FA0A93 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1634C4F29108B2200FA0A93 /* Animator.swift */; };
 		C190AC54290D2C12008A8C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190AC53290D2C12008A8C9E /* AppDelegate.swift */; };
 		C190AC56290D2C12008A8C9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C190AC55290D2C12008A8C9E /* SceneDelegate.swift */; };
@@ -26,10 +26,10 @@
 
 /* Begin PBXFileReference section */
 		C154E3CB290FF0B300EDAA8D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		C1634C48290FFE1700FA0A93 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
-		C1634C49290FFE1700FA0A93 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		C1634C48290FFE1700FA0A93 /* CharacterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		C1634C49290FFE1700FA0A93 /* CharacterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		C1634C4F29108B2200FA0A93 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
-		C190AC50290D2C12008A8C9E /* transition-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transition-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C190AC50290D2C12008A8C9E /* transition-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transition-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C190AC53290D2C12008A8C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C190AC55290D2C12008A8C9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C190AC5C290D2C14008A8C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,8 +66,8 @@
 		C154E3C7290FED5E00EDAA8D /* CharacterCell */ = {
 			isa = PBXGroup;
 			children = (
-				C1634C49290FFE1700FA0A93 /* UserCell.swift */,
-				C1634C48290FFE1700FA0A93 /* UserCell.xib */,
+				C1634C49290FFE1700FA0A93 /* CharacterCell.swift */,
+				C1634C48290FFE1700FA0A93 /* CharacterCell.xib */,
 			);
 			path = CharacterCell;
 			sourceTree = "<group>";
@@ -75,7 +75,7 @@
 		C190AC47290D2C12008A8C9E = {
 			isa = PBXGroup;
 			children = (
-				C190AC52290D2C12008A8C9E /* transition-v1 */,
+				C190AC52290D2C12008A8C9E /* transition-v2 */,
 				C190AC51290D2C12008A8C9E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,12 +83,12 @@
 		C190AC51290D2C12008A8C9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C190AC50290D2C12008A8C9E /* transition-v1.app */,
+				C190AC50290D2C12008A8C9E /* transition-v2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C190AC52290D2C12008A8C9E /* transition-v1 */ = {
+		C190AC52290D2C12008A8C9E /* transition-v2 */ = {
 			isa = PBXGroup;
 			children = (
 				C190AC76290DA235008A8C9E /* Data */,
@@ -99,7 +99,7 @@
 				C190AC5E290D2C14008A8C9E /* LaunchScreen.storyboard */,
 				C190AC61290D2C14008A8C9E /* Info.plist */,
 			);
-			path = "transition-v1";
+			path = "transition-v2";
 			sourceTree = "<group>";
 		};
 		C190AC67290D338E008A8C9E /* Presentation */ = {
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C190AC4F290D2C12008A8C9E /* transition-v1 */ = {
+		C190AC4F290D2C12008A8C9E /* transition-v2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C190AC64290D2C14008A8C9E /* Build configuration list for PBXNativeTarget "transition-v1" */;
+			buildConfigurationList = C190AC64290D2C14008A8C9E /* Build configuration list for PBXNativeTarget "transition-v2" */;
 			buildPhases = (
 				C190AC4C290D2C12008A8C9E /* Sources */,
 				C190AC4D290D2C12008A8C9E /* Frameworks */,
@@ -164,12 +164,12 @@
 			);
 			dependencies = (
 			);
-			name = "transition-v1";
+			name = "transition-v2";
 			packageProductDependencies = (
 				C154E3C9290FEEF800EDAA8D /* AlamofireImage */,
 			);
 			productName = "transition-v1";
-			productReference = C190AC50290D2C12008A8C9E /* transition-v1.app */;
+			productReference = C190AC50290D2C12008A8C9E /* transition-v2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C190AC4B290D2C12008A8C9E /* Build configuration list for PBXProject "transition-v1" */;
+			buildConfigurationList = C190AC4B290D2C12008A8C9E /* Build configuration list for PBXProject "transition-v2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -203,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C190AC4F290D2C12008A8C9E /* transition-v1 */,
+				C190AC4F290D2C12008A8C9E /* transition-v2 */,
 			);
 		};
 /* End PBXProject section */
@@ -217,7 +217,7 @@
 				C190AC6C290D33D9008A8C9E /* ListView.storyboard in Resources */,
 				C190AC5D290D2C14008A8C9E /* Assets.xcassets in Resources */,
 				C190AC71290D3402008A8C9E /* DetailView.storyboard in Resources */,
-				C1634C4A290FFE1700FA0A93 /* UserCell.xib in Resources */,
+				C1634C4A290FFE1700FA0A93 /* CharacterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +235,7 @@
 				C190AC56290D2C12008A8C9E /* SceneDelegate.swift in Sources */,
 				C190AC73290D3424008A8C9E /* DetailController.swift in Sources */,
 				C190AC78290DA247008A8C9E /* Error.swift in Sources */,
-				C1634C4B290FFE1700FA0A93 /* UserCell.swift in Sources */,
+				C1634C4B290FFE1700FA0A93 /* CharacterCell.swift in Sources */,
 				C190AC6E290D33E7008A8C9E /* ListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R88CDNMKLQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "transition-v1/Info.plist";
+				INFOPLIST_FILE = "transition-v2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = ListView;
@@ -405,7 +405,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R88CDNMKLQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "transition-v1/Info.plist";
+				INFOPLIST_FILE = "transition-v2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = ListView;
@@ -427,7 +427,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C190AC4B290D2C12008A8C9E /* Build configuration list for PBXProject "transition-v1" */ = {
+		C190AC4B290D2C12008A8C9E /* Build configuration list for PBXProject "transition-v2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C190AC62290D2C14008A8C9E /* Debug */,
@@ -436,7 +436,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C190AC64290D2C14008A8C9E /* Build configuration list for PBXNativeTarget "transition-v1" */ = {
+		C190AC64290D2C14008A8C9E /* Build configuration list for PBXNativeTarget "transition-v2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C190AC65290D2C14008A8C9E /* Debug */,

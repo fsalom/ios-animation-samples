@@ -26,7 +26,7 @@ final class Animator: NSObject, UIViewControllerAnimatedTransitioning {
             let selectedCell = firstViewController.selectedCell
             else { return nil }
 
-        self.cellImageViewRect = selectedCell.userImage.convert(selectedCell.userImage.bounds, to: window)
+        self.cellImageViewRect = selectedCell.characterImage.convert(selectedCell.characterImage.bounds, to: window)
     }
 
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
@@ -47,7 +47,7 @@ final class Animator: NSObject, UIViewControllerAnimatedTransitioning {
         guard
             let selectedCell = firstViewController.selectedCell,
             let window = firstViewController.view.window ?? secondViewController.view.window,
-            let cellImageSnapshot = selectedCell.userImage.snapshotView(afterScreenUpdates: true),
+            let cellImageSnapshot = selectedCell.characterImage.snapshotView(afterScreenUpdates: true),
             let controllerImageSnapshot = secondViewController.backgroundImage.snapshotView(afterScreenUpdates: true)
 
             else {

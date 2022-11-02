@@ -9,12 +9,11 @@
 import UIKit
 import AlamofireImage
 
-class UserCell: UITableViewCell {
+class CharacterCell: UITableViewCell {
     // MARK: - IBOutlets
-    @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var userImage: UIImageView!
-    @IBOutlet weak var userFullName: UILabel!
-    @IBOutlet weak var userDepartmentImage: UIImageView!
+
+    @IBOutlet weak var characterName: UILabel!
+    @IBOutlet weak var characterImage: UIImageView!
     // MARK: - Life Cycle
     var character: CharacterDTO!
     override func awakeFromNib() {
@@ -26,14 +25,14 @@ class UserCell: UITableViewCell {
     // MARK: - Functions
     func setupUI(for character: CharacterDTO) {
         self.character = character
-        userFullName.text = character.name
-        userImage.layer.borderWidth = 1
-        userImage.layer.masksToBounds = false
-        userImage.layer.borderColor = UIColor.gray.cgColor
-        userImage.layer.cornerRadius = self.userImage.frame.height / 2
-        userImage.clipsToBounds = true
+        characterName.text = character.name
+        characterImage.layer.borderWidth = 1
+        characterImage.layer.masksToBounds = false
+        characterImage.layer.borderColor = UIColor.gray.cgColor
+        characterImage.layer.cornerRadius = self.characterImage.frame.height / 2
+        characterImage.clipsToBounds = true
         if let url = URL(string: character.image){
-            userImage.af.setImage(withURL: url)
+            characterImage.af.setImage(withURL: url)
 
         }
     }
