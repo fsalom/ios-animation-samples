@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1B12F8D29A5650B00E681D9 /* ZoomTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B12F8A29A5650B00E681D9 /* ZoomTransitionController.swift */; };
+		C1B12F8E29A5650B00E681D9 /* ZoomDismissalInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B12F8B29A5650B00E681D9 /* ZoomDismissalInteractionController.swift */; };
+		C1B12F8F29A5650B00E681D9 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B12F8C29A5650B00E681D9 /* ZoomAnimator.swift */; };
 		C1C9085029A3E5D0004E9AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C9084F29A3E5D0004E9AC5 /* AppDelegate.swift */; };
 		C1C9085229A3E5D0004E9AC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C9085129A3E5D0004E9AC5 /* SceneDelegate.swift */; };
 		C1C9085429A3E5D0004E9AC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C9085329A3E5D0004E9AC5 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C1B12F8A29A5650B00E681D9 /* ZoomTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomTransitionController.swift; sourceTree = "<group>"; };
+		C1B12F8B29A5650B00E681D9 /* ZoomDismissalInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomDismissalInteractionController.swift; sourceTree = "<group>"; };
+		C1B12F8C29A5650B00E681D9 /* ZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
 		C1C9084C29A3E5CF004E9AC5 /* transition-v3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "transition-v3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C9084F29A3E5D0004E9AC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1C9085129A3E5D0004E9AC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1B12F8929A5650B00E681D9 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C1B12F8A29A5650B00E681D9 /* ZoomTransitionController.swift */,
+				C1B12F8B29A5650B00E681D9 /* ZoomDismissalInteractionController.swift */,
+				C1B12F8C29A5650B00E681D9 /* ZoomAnimator.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		C1C9084329A3E5CF004E9AC5 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +117,7 @@
 		C1C9084E29A3E5D0004E9AC5 /* transition-v3 */ = {
 			isa = PBXGroup;
 			children = (
+				C1B12F8929A5650B00E681D9 /* Animation */,
 				C1C9084F29A3E5D0004E9AC5 /* AppDelegate.swift */,
 				C1C9085129A3E5D0004E9AC5 /* SceneDelegate.swift */,
 				C1C9085329A3E5D0004E9AC5 /* ViewController.swift */,
@@ -263,6 +280,9 @@
 			files = (
 				C1C9085429A3E5D0004E9AC5 /* ViewController.swift in Sources */,
 				C1C9085A29A3E5D0004E9AC5 /* transition_v3.xcdatamodeld in Sources */,
+				C1B12F8D29A5650B00E681D9 /* ZoomTransitionController.swift in Sources */,
+				C1B12F8F29A5650B00E681D9 /* ZoomAnimator.swift in Sources */,
+				C1B12F8E29A5650B00E681D9 /* ZoomDismissalInteractionController.swift in Sources */,
 				C1C9085029A3E5D0004E9AC5 /* AppDelegate.swift in Sources */,
 				C1C9085229A3E5D0004E9AC5 /* SceneDelegate.swift in Sources */,
 			);
